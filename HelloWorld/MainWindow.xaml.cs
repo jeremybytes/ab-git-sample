@@ -8,11 +8,7 @@ namespace HelloWorld
         public MainWindow()
         {
             InitializeComponent();
-            ClickMeButton.Click += 
-                delegate (object sender, RoutedEventArgs e)
-                {
-                    MessageBox.Show("Hello World");
-                };
+            ClickMeButton.Click += (s, e) => MessageBox.Show("Hello World");
         }
     }
 }
